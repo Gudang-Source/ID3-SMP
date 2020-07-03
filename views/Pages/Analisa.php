@@ -8,13 +8,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-12 border-right border-1">
                             <div class="row">
-                                <div class="form-grup col-12  mb-2 input required-group-sm">
-                                    <label class="form-control-label">Nama</label>
-                                    <input required type="text" name="nama" class="form-control">
-                                </div>
+
                                 <div class="form-grup col-12  mb-2 input required-group-sm">
                                     <label class="form-control-label">NIS</label>
-                                    <input required type="text" name="nis" class="form-control">
+                                    <input required type="text" name="nis/nisn" class="form-control">
+                                </div>
+                                  <div class="form-grup col-12  mb-2 input required-group-sm">
+                                    <label class="form-control-label">Nama</label>
+                                    <input required type="text" name="nama" class="form-control">
                                 </div>
                                 <div class="form-grup col-12  mb-2 input required-group-sm">
                                     <label class="form-control-label">Jenis Kelamin</label>
@@ -124,6 +125,15 @@
                                 <div class="col-lg-6 col-12">
                                     <table class="table table-hover table-bordered">
                                         <tr>
+                                            <td>NIS</td>
+                                            <td>
+                                                <?php $y = "nis/nisn";?>
+                                                <?php echo $data['Request']->$y; ?>
+                                                <input type="hidden" name="input[]" value="<?php echo $data['Request']->$y; ?>">
+                                                <input type="hidden" name="tb[]" value="nis/nisn">
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td>Nama</td>
                                             <td>
                                                 <?php echo $data['Request']->nama; ?>
@@ -131,14 +141,7 @@
                                                 <input type="hidden" name="tb[]" value="nama">
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>NIS</td>
-                                            <td>
-                                                <?php echo $data['Request']->nis; ?>
-                                                <input type="hidden" name="input[]" value="<?php echo $data['Request']->nis; ?>">
-                                                <input type="hidden" name="tb[]" value="nis">
-                                            </td>
-                                        </tr>
+
                                         <tr>
                                             <td>Jenis Kelamin</td>
                                             <td>
@@ -168,7 +171,6 @@
                                 <div class="col-lg-6 col-12">
                             <?php $c = kucing4($data['hasil'], $data, $komponen, 1, $data['Request']);?>
 
-                                    <?php if (isset($Session['admin'])): ?>
                                         <div class="input-group mb-3">
                                                <select class="form-control">
                                                    <option <?php if ($c == "Sesuai"): ?> selected <?php endif;?> value="Sesuai">Sesuai</option>
@@ -179,7 +181,6 @@
                                                     <button class="btn btn-outline-primary" type="submit" name="aksi" value="insert" id="button-addon2">Tambahkan Ke Data Training</button>
                                                 </div>
                                             </div>
-                                    <?php endif;?>
                                 </div>
                             </div>
                             <div class="row">

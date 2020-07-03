@@ -99,8 +99,9 @@ class Controller
         //$this->fields('data_training');
 
         $fields1 = '[
-                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"nis\/nisn","label":"NIS\/NISN","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":false,"tb":true,"var":"input[]","var2":"tb[]"},
+
+                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"jk","label":"Jenis Kelamin","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"jurusan","label":"Jurusan","type":"text","max":"60","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"ektrakurikuler","label":"Bidang Ektrakurikuler Di Pilih","type":"text","max":"70","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"}
@@ -138,8 +139,9 @@ class Controller
         ];
         //$this->fields('data_training');
         $fields1 = '[
-                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"nis\/nisn","label":"NIS\/NISN","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":false,"tb":true,"var":"input[]","var2":"tb[]"},
+
+                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"jk","label":"Jenis Kelamin","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"jurusan","label":"Jurusan","type":"text","max":"60","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
                 {"name":"ektrakurikuler","label":"Bidang Ektrakurikuler Di Pilih","type":"text","max":"70","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"}
@@ -238,8 +240,9 @@ class Controller
         ];
         //$this->fields('data_training');
         $fields1 = '[
-                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"},
-                {"name":"nis\/nisn","label":"NIS\/NISN","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":false,"tb":true,"var":"input[]","var2":"tb[]"}
+                {"name":"nis\/nisn","label":"NIS\/NISN","type":"text","max":"10","pnj":12,"val":null,"red":"","input":true,"up":false,"tb":true,"var":"input[]","var2":"tb[]"},
+
+                {"name":"nama","label":"Nama","type":"text","max":"25","pnj":12,"val":null,"red":"","input":true,"up":true,"tb":true,"var":"input[]","var2":"tb[]"}
 
                 ]';
         $data['training.form'] = json_decode($fields1, true);
